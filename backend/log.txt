@@ -1,0 +1,227 @@
+D:\program_environment\Anaconda\python.exe D:/文档/PycharmProjects/QAProject/main.py
+Loading and Preparing the Dataset-----!!
+Dataset Successfully Loaded and Prepared-----!!
+
+Loading and Initializing the Bert Model -----!!
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertModel: ['cls.predictions.transform.dense.bias', 'cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.seq_relationship.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.LayerNorm.weight']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Model Successfully Loaded and Initialized-----!!
+
+------------------Starting Training-----------!!
+D:\program_environment\Anaconda\lib\site-packages\transformers\optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+Starting training...
+
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+  0%|          | 0/10108 [00:00<?, ?it/s]D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+ 25%|██▍       | 2501/10108 [09:22<27:36,  4.59it/s]  Batch 2,500  of  10,108.    Elapsed: 0:10:08.
+ 49%|████▉     | 5001/10108 [18:41<19:49,  4.29it/s]  Batch 5,000  of  10,108.    Elapsed: 0:19:27.
+ 74%|███████▍  | 7501/10108 [28:04<09:44,  4.46it/s]  Batch 7,500  of  10,108.    Elapsed: 0:28:50.
+ 99%|█████████▉| 10001/10108 [37:21<00:23,  4.50it/s]  Batch 10,000  of  10,108.    Elapsed: 0:38:06.
+100%|██████████| 10108/10108 [37:44<00:00,  4.46it/s]
+
+  Average training loss: 0.63
+  Training epoch took: 0:38:30
+Starting evaluation...
+
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+  0%|          | 0/5054 [00:00<?, ?it/s]D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+100%|██████████| 5054/5054 [08:54<00:00,  9.45it/s]
+  Average Validation Loss: 0.61
+  Average Validation Accuracy: 0.64
+  Validation took: 0:09:18
+Validation accuracy = 0.6423055995322048
+Validation score improved (-inf --> 0.6423055995322048). Saving model!
+Starting training...
+
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+  0%|          | 0/10108 [00:00<?, ?it/s]D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+ 25%|██▍       | 2501/10108 [09:15<28:12,  4.50it/s]  Batch 2,500  of  10,108.    Elapsed: 0:10:01.
+ 49%|████▉     | 5001/10108 [18:22<18:14,  4.67it/s]  Batch 5,000  of  10,108.    Elapsed: 0:19:08.
+ 74%|███████▍  | 7501/10108 [27:20<09:16,  4.69it/s]  Batch 7,500  of  10,108.    Elapsed: 0:28:06.
+ 99%|█████████▉| 10001/10108 [36:19<00:22,  4.66it/s]  Batch 10,000  of  10,108.    Elapsed: 0:37:05.
+100%|██████████| 10108/10108 [36:42<00:00,  4.59it/s]
+
+  Average training loss: 0.61
+  Training epoch took: 0:37:28
+Starting evaluation...
+
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+  0%|          | 0/5054 [00:00<?, ?it/s]D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+100%|██████████| 5054/5054 [08:37<00:00,  9.76it/s]
+  Average Validation Loss: 0.61
+  Average Validation Accuracy: 0.64
+  Validation took: 0:09:00
+Validation accuracy = 0.6434903047067826
+Validation score improved (0.6423055995322048 --> 0.6434903047067826). Saving model!
+Starting training...
+
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+  0%|          | 0/10108 [00:00<?, ?it/s]D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+ 25%|██▍       | 2501/10108 [09:00<26:55,  4.71it/s]  Batch 2,500  of  10,108.    Elapsed: 0:09:47.
+ 49%|████▉     | 5001/10108 [18:00<18:11,  4.68it/s]  Batch 5,000  of  10,108.    Elapsed: 0:18:48.
+ 74%|███████▍  | 7501/10108 [27:01<09:28,  4.59it/s]  Batch 7,500  of  10,108.    Elapsed: 0:27:48.
+ 99%|█████████▉| 10001/10108 [36:02<00:23,  4.59it/s]  Batch 10,000  of  10,108.    Elapsed: 0:36:49.
+100%|██████████| 10108/10108 [36:25<00:00,  4.62it/s]
+
+  Average training loss: 0.61
+  Training epoch took: 0:37:12
+Starting evaluation...
+
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+  0%|          | 0/5054 [00:00<?, ?it/s]D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+100%|██████████| 5054/5054 [08:37<00:00,  9.76it/s]
+  Average Validation Loss: 0.60
+  Average Validation Accuracy: 0.64
+  Validation took: 0:09:02
+Validation accuracy = 0.6446230708373409
+Validation score improved (0.6434903047067826 --> 0.6446230708373409). Saving model!
+Starting training...
+
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+  0%|          | 0/10108 [00:00<?, ?it/s]D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+ 25%|██▍       | 2501/10108 [09:01<27:37,  4.59it/s]  Batch 2,500  of  10,108.    Elapsed: 0:09:47.
+ 49%|████▉     | 5001/10108 [18:03<18:32,  4.59it/s]  Batch 5,000  of  10,108.    Elapsed: 0:18:48.
+ 74%|███████▍  | 7501/10108 [27:04<09:28,  4.59it/s]  Batch 7,500  of  10,108.    Elapsed: 0:27:49.
+ 99%|█████████▉| 10001/10108 [36:17<00:23,  4.51it/s]  Batch 10,000  of  10,108.    Elapsed: 0:37:02.
+100%|██████████| 10108/10108 [36:41<00:00,  4.59it/s]
+
+  Average training loss: 0.61
+  Training epoch took: 0:37:26
+Starting evaluation...
+
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+  0%|          | 0/5054 [00:00<?, ?it/s]D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+100%|██████████| 5054/5054 [08:53<00:00,  9.47it/s]
+  Average Validation Loss: 0.60
+  Average Validation Accuracy: 0.64
+  Validation took: 0:09:25
+Validation accuracy = 0.6448036209014173
+EarlyStopping counter: 1 out of 4
+Starting training...
+
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+  0%|          | 0/10108 [00:00<?, ?it/s]D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+ 25%|██▍       | 2501/10108 [09:16<28:08,  4.51it/s]  Batch 2,500  of  10,108.    Elapsed: 0:10:02.
+ 49%|████▉     | 5001/10108 [18:31<19:10,  4.44it/s]  Batch 5,000  of  10,108.    Elapsed: 0:19:17.
+ 74%|███████▍  | 7501/10108 [27:49<09:42,  4.47it/s]  Batch 7,500  of  10,108.    Elapsed: 0:28:35.
+ 99%|█████████▉| 10001/10108 [37:06<00:23,  4.48it/s]  Batch 10,000  of  10,108.    Elapsed: 0:37:52.
+100%|██████████| 10108/10108 [37:30<00:00,  4.49it/s]
+
+  Average training loss: 0.61
+  Training epoch took: 0:38:16
+Starting evaluation...
+
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+  0%|          | 0/5054 [00:00<?, ?it/s]D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+100%|██████████| 5054/5054 [08:54<00:00,  9.46it/s]
+  Average Validation Loss: 0.60
+  Average Validation Accuracy: 0.64
+  Validation took: 0:09:17
+Validation accuracy = 0.642998120307828
+EarlyStopping counter: 2 out of 4
+Starting training...
+
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+  0%|          | 0/10108 [00:00<?, ?it/s]D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+ 25%|██▍       | 2501/10108 [09:18<28:11,  4.50it/s]  Batch 2,500  of  10,108.    Elapsed: 0:10:04.
+ 49%|████▉     | 5001/10108 [18:35<18:51,  4.51it/s]  Batch 5,000  of  10,108.    Elapsed: 0:19:21.
+ 74%|███████▍  | 7501/10108 [27:47<09:21,  4.64it/s]  Batch 7,500  of  10,108.    Elapsed: 0:28:33.
+ 99%|█████████▉| 10001/10108 [36:46<00:23,  4.61it/s]  Batch 10,000  of  10,108.    Elapsed: 0:37:32.
+100%|██████████| 10108/10108 [37:09<00:00,  4.53it/s]
+
+  Average training loss: 0.61
+  Training epoch took: 0:37:55
+Starting evaluation...
+
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+  0%|          | 0/5054 [00:00<?, ?it/s]D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+100%|██████████| 5054/5054 [08:37<00:00,  9.76it/s]
+  Average Validation Loss: 0.60
+  Average Validation Accuracy: 0.64
+  Validation took: 0:09:00
+Validation accuracy = 0.639115057387369
+EarlyStopping counter: 3 out of 4
+Starting training...
+
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+  0%|          | 0/10108 [00:00<?, ?it/s]D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+ 25%|██▍       | 2501/10108 [09:00<27:36,  4.59it/s]  Batch 2,500  of  10,108.    Elapsed: 0:09:46.
+ 49%|████▉     | 5001/10108 [17:59<18:17,  4.65it/s]  Batch 5,000  of  10,108.    Elapsed: 0:18:45.
+ 74%|███████▍  | 7501/10108 [26:58<09:25,  4.61it/s]  Batch 7,500  of  10,108.    Elapsed: 0:27:45.
+ 99%|█████████▉| 10001/10108 [35:58<00:23,  4.62it/s]  Batch 10,000  of  10,108.    Elapsed: 0:36:45.
+100%|██████████| 10108/10108 [36:21<00:00,  4.63it/s]
+
+  Average training loss: 0.61
+  Training epoch took: 0:37:08
+Starting evaluation...
+
+D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+  0%|          | 0/5054 [00:00<?, ?it/s]D:\program_environment\Anaconda\lib\site-packages\transformers\tokenization_utils_base.py:2263: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+100%|██████████| 5054/5054 [08:36<00:00,  9.78it/s]
+  Average Validation Loss: 0.60
+  Average Validation Accuracy: 0.64
+  Validation took: 0:09:00
+Validation accuracy = 0.6363573407272978
+EarlyStopping counter: 4 out of 4
+Early stopping
+Training complete-----!!!
+
+Process finished with exit code 0
